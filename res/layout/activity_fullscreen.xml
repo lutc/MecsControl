@@ -1,0 +1,299 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="600dp"
+    android:layout_height="1024dp"
+    android:background="@drawable/main5"
+    tools:context="com.example.mecscontrol.MecsControlActivity" >
+
+    <Button
+        android:id="@+id/btnEnablePrj"
+        android:layout_width="122dp"
+        android:layout_height="63dp"
+        android:layout_alignBaseline="@+id/btnDisablePrj"
+        android:layout_alignBottom="@+id/btnDisablePrj"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/btnDisablePrj"
+        android:background="@drawable/rectangle"
+        android:text="@string/poweron"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnPowerViMedia"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="121dp"
+        android:background="@drawable/round"
+        android:text="@string/Stop"
+        android:textColor="#fff"
+        android:textSize="@dimen/fontsize64" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/btnStop"
+        android:layout_below="@+id/btnStop"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round"
+        android:paddingLeft="5dp"
+        android:text="@string/Play"
+        android:textColor="#fff"
+        android:textSize="@dimen/fs46dp" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_below="@+id/btnPlay"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round"
+        android:paddingLeft="10dp"
+        android:text="@string/Pause"
+        android:textColor="#fff"
+        android:textSize="@dimen/fs36dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDisablePrj"
+        android:layout_width="122dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="305dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/poweroff"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/txtRightEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMidlEn"
+        android:layout_alignBottom="@+id/txtMidlEn"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnPowerViMedia"
+        android:text="@string/isenabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0f0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtLeftEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMidlEn"
+        android:layout_alignBottom="@+id/txtMidlEn"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btn3D"
+        android:text="@string/isenabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0f0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtLeftDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLeftEn"
+        android:layout_alignBottom="@+id/txtLeftEn"
+        android:layout_marginLeft="60dp"
+        android:text="@string/isdisabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#f00"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtMidDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMidlEn"
+        android:layout_alignBottom="@+id/txtMidlEn"
+        android:layout_marginLeft="107dp"
+        android:layout_toRightOf="@+id/txtLeftDis"
+        android:text="@string/isdisabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#f00"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtRightDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRightEn"
+        android:layout_alignBottom="@+id/txtRightEn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/btnPowerViMedia"
+        android:text="@string/isdisabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#f00"
+        android:visibility="invisible" />
+
+    <com.example.mecscontrol.VerticalSeekBar
+        android:id="@+id/sbVolume"
+        android:layout_width="50dip"
+        android:layout_height="260dp"
+        android:layout_alignBottom="@+id/btnPause"
+        android:layout_toLeftOf="@+id/txtLeftEn"
+        android:progressDrawable="@drawable/progress_vertical"
+        android:thumb="@drawable/seek_thumb_wide" />
+
+    <TextView
+        android:id="@+id/txtVideoEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="493dp"
+        android:text="@string/isenabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0f0"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnPowerViMedia"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="347dp"
+        android:layout_marginTop="416dp"
+        android:background="@drawable/round"
+        android:text="@string/poweronoff"
+        android:textColor="#fff"
+        android:textSize="@dimen/fontsize12dp" />
+
+    <Button
+        android:id="@+id/btn3DMenu"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="287dp"
+        android:background="@drawable/round"
+        android:text="@string/threed"
+        android:textColor="#fff"
+        android:textSize="@dimen/fs15dp" />
+
+    <TextView
+        android:id="@+id/txtMidlEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnablePrj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="@string/isenabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0f0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtVideoDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtVideoEn"
+        android:layout_alignBottom="@+id/txtVideoEn"
+        android:layout_toRightOf="@+id/txtLeftEn"
+        android:text="@string/isdisabled"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#f00"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="270dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/btnStop"
+        android:layout_toRightOf="@+id/txtLeftDis"
+        android:background="@drawable/rectangle"
+        android:text="@string/history"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn3D"
+        android:layout_width="270dp"
+        android:layout_height="69dp"
+        android:layout_alignLeft="@+id/btnHistory"
+        android:layout_alignTop="@+id/btnPlay"
+        android:background="@drawable/rectangle"
+        android:text="@string/cubeDvideo"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn3D2"
+        android:layout_width="270dp"
+        android:layout_height="69dp"
+        android:layout_alignLeft="@+id/btn3D"
+        android:layout_alignTop="@+id/btnPause"
+        android:background="@drawable/rectangle"
+        android:text="@string/cubeDvideo2"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/backgroundportrait"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtAlarmConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/alarmconnection"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/fs36dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtRightWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlarmConnection"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnPowerViMedia"
+        android:text="@string/wait"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtMiddleWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRightWait"
+        android:layout_alignBottom="@+id/txtRightWait"
+        android:layout_alignLeft="@+id/txtMidlEn"
+        android:text="@string/wait"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtLeftWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMiddleWait"
+        android:layout_alignBottom="@+id/txtMiddleWait"
+        android:layout_alignLeft="@+id/txtLeftEn"
+        android:text="@string/wait"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+</RelativeLayout>

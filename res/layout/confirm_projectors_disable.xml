@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:alpha="30"
+    android:background="@drawable/dialog"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".15" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rectangle"
+            android:text="@string/cancel"
+            android:textColor="#fff"
+            android:textSize="@dimen/fs15dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".15" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rectangle"
+            android:text="@string/Continue"
+            android:textColor="#fff"
+            android:textSize="@dimen/fs15dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".15" />
+
+
+    </LinearLayout>
+    
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".3" />
+</LinearLayout>

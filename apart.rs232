@@ -1,0 +1,203 @@
+protocol Apart: com
+port: 0
+speed: 19200
+character-size: 8
+parity: none
+query-period: 10000
+timeout: 1000
+case-sensitive: false
+
+
+command setinputa
+{
+   send Apart ("SET SELECT A" cr)
+}
+
+command setinputb
+{
+   send Apart ("SET SELECT B" cr)
+}
+
+command setinputc
+{
+   send Apart ("SET SELECT C" cr)
+}
+
+command setinputd
+{
+   send Apart ("SET SELECT D" cr)
+}
+
+command setinput
+{
+   send Apart ("SET SELECT D" cr)
+}
+
+
+command setvolumeoff
+{
+   send Apart ("SET MSCLVL -80" cr)
+}
+
+command setvolumemax
+{
+   send Apart ("SET MSCLVL 0" cr)
+}
+
+command setvolumezerofive
+{
+   send Apart ("SET MSCLVL -5" cr)
+}
+
+command setvolumeonezero	
+{
+   send Apart ("SET MSCLVL -10" cr)
+}
+
+command setvolumeonefive
+{
+   send Apart ("SET MSCLVL -15" cr)
+}
+
+command setvolumetwozero
+{
+   send Apart ("SET MSCLVL -20" cr)
+}
+
+command setvolumetwofive
+{
+   send Apart ("SET MSCLVL -25" cr)
+}
+
+command setvolumethreezero
+{
+   send Apart ("SET MSCLVL -30" cr)
+}
+
+command setvolumethreefive
+{
+   send Apart ("SET MSCLVL -35" cr)
+}
+
+command setvolumefourzero
+{
+   send Apart ("SET MSCLVL -40" cr)
+}
+
+command setvolumefourfive
+{
+   send Apart ("SET MSCLVL -45" cr)
+}
+
+command setvolumefivezero
+{
+   send Apart ("SET MSCLVL -50" cr)
+}
+
+command setvolumefivefive
+{
+   send Apart ("SET MSCLVL -55" cr)
+}
+
+command setvolumesixzero
+{
+   send Apart ("SET MSCLVL -60" cr)
+}
+
+command setvolumesixfive
+{
+   send Apart ("SET MSCLVL -65" cr)
+}
+
+command setvolumesevenzero
+{
+   send Apart ("SET MSCLVL -70" cr)
+}
+
+command setvolumesevenfive
+{
+   send Apart ("SET MSCLVL -75" cr)
+}
+
+query
+{
+	send Apart ("GET MSCLVL" cr)
+	receive
+	{
+		("MSCLVL 0" cr)
+		{
+			set state zero
+		}
+		("MSCLVL -5" cr)
+		{
+			set state five
+		}
+		("MSCLVL -10" cr)
+		{
+			set state onezero
+		}
+		("MSCLVL -20" cr)
+		{
+			set state twozero
+		}
+		("MSCLVL -30" cr)
+		{
+			set state threezero
+		}
+		("MSCLVL -40" cr)
+		{
+			set state fourzero
+		}
+		("MSCLVL -50" cr)
+		{
+			set state fivezero
+		}
+		("MSCLVL -60" cr)
+		{
+			set state sixzero
+		}
+		("MSCLVL -70" cr)
+		{
+			set state sevenzero
+		}
+		
+		("MSCLVL -15" cr)
+		{
+			set state onefive
+		}
+		("MSCLVL -25" cr)
+		{
+			set state twofive
+		}
+		("MSCLVL -35" cr)
+		{
+			set state threefive
+		}
+		("MSCLVL -45" cr)
+		{
+			set state fourfive
+		}
+		("MSCLVL -55" cr)
+		{
+			set state fivefive
+		}
+		("MSCLVL -65" cr)
+		{
+			set state sixfive
+		}
+		("MSCLVL -75" cr)
+		{
+			set state sevenfive
+		}
+		
+		("MSCLVL -80" cr)
+		{
+			set state eightzero
+		}
+
+		timeout
+		{
+			set state unknown
+		}
+	}
+}

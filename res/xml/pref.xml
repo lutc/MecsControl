@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="192.168.1.119"
+        android:inputType="phone"
+        android:key="address"
+        android:summary="Ip Адрес контроллера MECS"
+        android:title="Адрес" >
+    </EditTextPreference>
+
+    <ListPreference
+        android:defaultValue="@string/def2"
+        android:dialogTitle="@string/favselection"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues"
+        android:key="TWODFAV"
+        android:summary="@string/fav_selecting"
+        android:title="@string/twodvideocaption" />
+    <ListPreference
+        android:defaultValue="@string/def4"
+        android:dialogTitle="@string/favselection"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues"
+        android:key="THREEDFAV"
+        android:summary="@string/fav_selecting"
+        android:title="@string/threedvideocaption" />
+        <ListPreference
+        android:defaultValue="@string/def6"
+        android:dialogTitle="@string/favselection"
+        android:entries="@array/listentries"
+        android:entryValues="@array/listvalues"
+        android:key="THREEDFAV2"
+        android:summary="@string/fav_selecting"
+        android:title="@string/threedvideocaption1" />
+
+</PreferenceScreen>

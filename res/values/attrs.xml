@@ -1,0 +1,31 @@
+<resources>
+    <declare-styleable name="ProgressBar">
+        <attr name="android:progressDrawable" />
+        <attr name="android:minWidth" />
+        <attr name="android:maxWidth" />
+        <attr name="android:minHeight" />
+        <attr name="android:maxHeight" />
+        <attr name="android:max" />
+        <attr name="android:progress" />
+        <attr name="android:secondaryProgress" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekBar">
+        <attr name="android:thumb" />
+        <attr name="android:thumbOffset" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="android:disabledAlpha" />
+    </declare-styleable>
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

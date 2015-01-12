@@ -1,0 +1,116 @@
+Handler handler = new Handler();
+				final long DELAY = 800;
+				handler.postDelayed(new Runnable() {
+
+					@Override
+					public void run() {
+						TelnetControl.INSTANCE
+								.SendCommand("command Mitsubishi down");
+
+						Handler handler0 = new Handler();
+
+						handler0.postDelayed(new Runnable() {
+
+							@Override
+							public void run() {
+								TelnetControl.INSTANCE
+										.SendCommand("command Mitsubishi down");
+
+								Handler handler0 = new Handler();
+
+								handler0.postDelayed(new Runnable() {
+
+									@Override
+									public void run() {
+										TelnetControl.INSTANCE
+												.SendCommand("command Mitsubishi down");
+										Handler handler0 = new Handler();
+
+										handler0.postDelayed(new Runnable() {
+
+											@Override
+											public void run() {
+												TelnetControl.INSTANCE
+														.SendCommand("command Mitsubishi down");
+												Handler handler0 = new Handler();
+
+												handler0.postDelayed(
+														new Runnable() {
+
+															@Override
+															public void run() {
+																TelnetControl.INSTANCE
+																		.SendCommand("command Mitsubishi down");
+																Handler handler0 = new Handler();
+
+																handler0.postDelayed(
+																		new Runnable() {
+
+																			@Override
+																			public void run() {
+																				TelnetControl.INSTANCE
+																						.SendCommand("command Mitsubishi right");
+																				Handler handler0 = new Handler();
+
+																				handler0.postDelayed(
+																						new Runnable() {
+
+																							@Override
+																							public void run() {
+																								TelnetControl.INSTANCE
+																										.SendCommand("command Mitsubishi menu");
+																								Handler handler0 = new Handler();
+
+																								handler0.postDelayed(
+																										new Runnable() {
+
+																											@Override
+																											public void run() {
+																												TelnetControl.INSTANCE
+																														.SendCommand("command Mitsubishi menu");
+																												Handler handler0 = new Handler();
+																												handler0.postDelayed(
+																														new Runnable() {
+
+																															@Override
+																															public void run() {
+																																TelnetControl.INSTANCE
+																																		.SendCommand("command Vimedia gotobookmarktwo");
+																																Handler handler0 = new Handler();
+																																handler0.postDelayed(
+																																		new Runnable() {
+
+																																			@Override
+																																			public void run() {
+																																				TelnetControl.INSTANCE
+																																						.SendCommand("command Vimedia play");
+
+																																			}
+																																		},
+																																		DELAY / 2);
+
+																															}
+																														},
+																														DELAY);
+
+																											}
+																										},
+																										DELAY);
+
+																							}
+																						},
+																						DELAY);
+																			}
+																		},
+																		DELAY);
+
+															}
+														}, DELAY);
+											}
+										}, DELAY);
+									}
+								}, DELAY);
+							}
+						}, DELAY);
+					}
+				}, DELAY);

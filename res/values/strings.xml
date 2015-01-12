@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">viMedia</string>
+    <string name="action_settings">Настройки</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="Connect">Подключение</string>
+    <string name="title_activity_assmain">ASSMainActivity</string>
+    <string name="title_activity_fullscreen">viMedia</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main_activity111">MainActivity111</string>
+    <string name="title_activity_mecs_control">MecsControl</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="poweroff">Выключить</string>
+    <string name="poweron">Включить</string>
+    <string name="poweronoff">Вкл/Выкл</string>
+    <string name="Stop">■</string>
+    <string name="Play">▶</string>
+    <string name="history">История подводных\n сил России</string>
+    <string name="Pause"> ▌▌</string>
+    <string name="SelectProjectorMode">Выбор режима работы центрального проектора</string>
+    <string name="cubeDvideo">3D. Подводная жизнь</string>
+    <string name="cubeDvideo2">3D. Аквариум</string>
+    <string name="isenabled">Включен</string>
+    <string name="isdisabled">Выключен</string>
+    <string name="isproected">Проецирует</string>
+    <string name="notproected">Не проецирует</string>
+    <string name="twodvideocaption">2D Видео. История подводных сил России</string>
+    <string name="threedvideocaption">3D Видео. Аквариум</string>
+    <string name="threedvideocaption1">3D Видео. Океан</string>
+    <string name="fav_selecting">Выбор номера закладки</string>
+    <string name="favselection">Выберите номер закладки</string>
+    <string name="default2">По умолчанию 2</string>
+    <string name="default4">По умолчанию 4</string>
+    <string name="def2">gotobookmarktwo</string>
+    <string name="def4">gotobookmarkfour</string>
+    <string name="def6">gotobookmarksix</string>
+    <string name="threed">3D</string>
+    <string name="title_activity_select3_dmode">Select3Dmode</string>
+    <string name="twod">2D</string>
+    <string name="menu">Меню</string>
+    <string name="D3enable">3D Вкл.</string>
+    <string name="D3disable">3D Выкл.</string>
+    <string name="Continue">Продолжить</string>
+    <string name="cancel">Отменить</string>
+    <string name="captionConfirmPCDis">Вы уверены?</string>
+    <string name="captionConfirmPrjDis">Убедитесь, что видеоплеер отключен!</string>
+    <string name="alarmconnection">Ожидается связь с контроллером</string>
+    <string name="wait">Ожидайте</string>
+    <string name="v2">MecsControlV2</string>
+
+</resources>

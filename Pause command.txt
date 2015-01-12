@@ -1,0 +1,6 @@
+  <?xml version="1.0" encoding="windows-1251" ?> 
+- <Command xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="PauseProjectCommand">
+  <ClientId>a5e51cc5-a05a-42da-a30b-43365e8e3a3b</ClientId> 
+  <DeviceGroup>0</DeviceGroup> 
+  <ShowLayers>true</ShowLayers> 
+  </Command>
